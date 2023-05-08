@@ -5,6 +5,10 @@
 /public/storage
 /storage/*.key
 /vendor
+/resources/css
+/resources/js
+/resources/sass
+/resources/views/layouts
 .env
 .env.backup
 .env.production
