@@ -13,6 +13,12 @@ body
     align-content: center;
     align-items: center;
 }
+.grid{
+    display: grid;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
 .box-90{
     margin: auto;
     width: 90%;
@@ -54,4 +60,7 @@ a{
     text-decoration: none;
     list-style: none;
 }
+.form{
+    padding:.4em;
 
+}

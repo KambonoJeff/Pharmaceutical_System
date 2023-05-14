@@ -7,8 +7,11 @@ Route::get('/home', function () {
     return view('welcome');
 });
 Route::get('/register', function () {
-    return view('./components/register');
-})->name('register');
+    return view('components.register');
+});
+
+
+Route::post('/register',[UserController::class, 'store'])->name('register');
 
 Route::get('/login', [UserController::class, 'login' ] )->name('login');
 Route::post('/login', [UserController::class, 'store' ] )->name('login');
