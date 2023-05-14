@@ -1,0 +1,36 @@
+body
+{
+    padding: 0;
+    margin: auto;
+    color: aqua;
+    background: darkslateblue;
+    letter-spacing: 3px;
+
+}
+h1{
+    font-weight: 700;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: .56em;
+    margin: .2em;
+}
+h1:hover{
+
+    padding: .66em;
+    margin: .2em;
+}
+h2{
+    font-weight: 500;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: .56em;
+    margin: .2em;
+}
+h2:hover{
+
+    padding: .66em;
+    margin: .2em;
+}
+
