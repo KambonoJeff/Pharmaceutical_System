@@ -7,6 +7,20 @@ body
     letter-spacing: 3px;
 
 }
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+.box-90{
+    margin: auto;
+    width: 90%;
+}
+.box-80{
+    margin: auto;
+    width: 90%;
+}
 h1{
     font-weight: 700;
     font-size: larger;
@@ -14,23 +28,30 @@ h1{
     text-align: center;
     padding: .56em;
     margin: .2em;
+    color: aqua;
 }
 h1:hover{
 
     padding: .66em;
     margin: .2em;
+
 }
-h2{
+h2, a{
     font-weight: 500;
     font-size: medium;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     padding: .56em;
     margin: .2em;
+    color: aquamarine;
 }
 h2:hover{
 
     padding: .66em;
     margin: .2em;
+}
+a{
+    text-decoration: none;
+    list-style: none;
 }
 

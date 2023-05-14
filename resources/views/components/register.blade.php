@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{asset('style.css')}}">
-    <title>Register</title>
+@extends('welcome')
+@section('content')
+<h1 align="center">Register Here</h1>
+
+@endsection
 
 
-</head>
-<body>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1 align="center">Register Here</h1>
-</body>
-</html>
