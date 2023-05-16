@@ -28,7 +28,7 @@
                 <h1 align="center">Pharmarceutical system By KambonoJeff</h1>
                 @yield('content')
 
->>>>>>> master
+
             </div>
         </div>
     </body>
