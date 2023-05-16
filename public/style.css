@@ -1,0 +1,141 @@
+:root {
+    --primary-color: white;
+  }
+
+
+body
+{
+    padding: 0;
+    margin: auto;
+    color: var(--primary-color);
+    background: grey;
+    letter-spacing: 3px;
+
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+.box-90{
+    margin: auto;
+    width: 90%;
+}
+.box-80{
+    margin: auto;
+    width: 90%;
+}
+h1{
+    font-weight: 700;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: .56em;
+    margin: .2em;
+    color: var(--primary-color);
+}
+h1:hover{
+
+    padding: .66em;
+    margin: .2em;
+
+}
+h2, a{
+    font-weight: 500;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: .56em;
+    margin: .2em;
+    color: var(--primary-color);
+}
+h2:hover{
+
+    padding: .66em;
+    margin: .2em;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+}
+.form{
+    padding:.4em;
+
+}
+button {
+	background-color: orange;
+	color: #fff;
+	font-size: 20px;
+	border: none;
+	margin: .7em auto;
+	padding: 10px 20px;
+	border-radius: 8px;
+	cursor: pointer;
+  }
+  button:hover {
+	background-color:#fff;
+	color: orange;
+	border: 3px solid black;
+  }
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: transparent;
+  box-shadow: 0 11px 24px rgba(0, 0, 0, 0.2);
+  padding: 6em;
+  align-items: center;
+  align-content: center;
+
+}
+.form-group {
+  margin-bottom: 1em 1em;
+  padding: 1em;
+}
+label {
+  display: block;
+  margin-top: .7em;
+  margin-bottom: .8em;
+  font-size: 22px;
+  letter-spacing: 8px;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="name"],
+textarea {
+width: 100%;
+padding: .71em;
+border-radius: 5px;
+border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+font-size: 20px;
+margin-bottom: 10px;
+background-color: transparent;
+}
+input::placeholder{
+    color: var(--primary-color);
+    letter-spacing: 5px;
+}
+button[type="submit"] {
+background-color: #333;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 22px;
+letter-spacing: 4px;
+cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: #fff;
+  color: #333;
+}
+
