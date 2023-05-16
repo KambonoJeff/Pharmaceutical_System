@@ -9,10 +9,26 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     public function login(Request $request){
-        return view('components.login');
+        $request->validate([
+            $request->email => 'required|email|max:255',
+            $request->password=>'required|confirmed'
+        ]);
+        dd($request);
+
+
+
     }
     public function store(Request $request){
-    dd($request->request);
+     $request->validate(
+        [
+            $request->name => 'require|max:255|string',
+            $request->email => 'required|email|max:255',
+            $request->password=>'required|confirmed'
+
+        ],
+        []
+    );
+    dd($request);
     }
     public function logout(Request $request){
     dd($request->request);

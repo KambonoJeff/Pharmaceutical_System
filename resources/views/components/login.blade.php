@@ -5,15 +5,17 @@
 
 <form class="form" action="{{ route('login') }}" method="post">
     @csrf
-    <label for="email">email</label>
-    <input type="email" name="email" id="email">
-    <label for="password">password</label>
-    <input type="password" name="password" id="password">
-    <form method="post">
+    <div align="" class="grid form-group">
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" value="{{old('email')}}">
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password">
+        <form method="post">
         @csrf
-        <button type="submit">Submit</button>
+        <button align="center" type="submit">Submit</button>
+        </form>
+    </div>
 
-    </form>
 
 </form>
 
