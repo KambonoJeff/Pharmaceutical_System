@@ -8,11 +8,11 @@ use Illuminate\Support\Facades\Auth;
 class DashboardController extends Controller
 {
     public function index(Request $request){
-        $data = Auth::attempt(['email' => $request->email, 'password' => $request->password]);
+        $data = auth()->user();
         if($data){
             return view('community');
         }else{
-            return redirect()->route('login');
+            dd('Not auhtenticated for some f reason');
         }
     }
 }

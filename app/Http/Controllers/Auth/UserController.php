@@ -12,7 +12,17 @@ use Illuminate\Support\Facades\Hash;
 class UserController extends Controller
 {
     public function login(Request $request){
-        dd($request);
+        $data = Auth::attempt($request->only('email ', 'password'));
+        if($data){
+            return redirect()-route('dashboard');
+        }
+        else{
+            $authuser = auth()->user();
+            if($authuser){
+                return redirect()->route('community');
+            }
+            return redirect()->route('login');
+        }
     }
     public function store(Request $request){
        $data = $request->validate(
@@ -39,22 +49,9 @@ class UserController extends Controller
             dd('not validated');
          }
 
-
-
-        //  if (Auth::attempt($request->only('email','password')))
-        //     {
-        //         return response()->json([
-        //             'data'=> $user,
-        //             'token'=> $user->createToken('API token of '.$user->name)->plainTextToken
-        //         ]);
-
-        //     }
-        //  else{
-        //     return response()->json(['Not Signed In'],403);
-        //  }
     }
     public function logout(Request $request){
-        dd($request);
+        return response()->json('logged out');
 
 
     }

@@ -13,11 +13,16 @@ Route::get('/community', [DashboardController::class, 'index'])->name('community
 Route::get('/register', function () {
     return view('components.register');
 });
-Route::get('/login', [UserController::class, 'login' ] )->name('login');
+Route::get('/login',function(){
+    return view('components.login');
+})->name('login');
+
+
+Route::post('/login', [UserController::class, 'login' ] )->name('login');
+
 Route::get('/', function () {
     return view('notFound');
 });
 Route::post('/register',[UserController::class, 'store'])->name('register');
-Route::post('/login', [UserController::class, 'store' ] )->name('login');
-Route::post('/logout', [UserController::class, 'logout' ] )->name('logout');
+Route::get('/logout', [UserController::class, 'logout' ] )->name('logout');
 
