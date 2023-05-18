@@ -14,15 +14,24 @@
                     </span>
 
                     <div class="flex">
-                        <h2><a href="{{ route('home') }}" class="">Home</a></h2>
-                        <h2><a href="{{ route('register') }}" class="">Register</a></h2>
-                        <h2><a href="{{ route('logout') }}" class="">Logout</a></h2>
+
+
                         @auth
-                            <h2>
-                                <a href="http:{{ route('community') }}">Community</a>
-                            </h2>
+                        <h2>
+                            <a href="http:{{ route('community') }}">Community</a>
+                        </h2>
+                            <h2>{{ auth()->user()->name}}</h2>
+
+                            <h2><a href="{{ route('logout') }}" class="">Logout</a></h2>
 
                         @endauth
+                        @guest
+                        <h2>
+                            <a href="http:{{ route('community') }}">Community</a>
+                        </h2>
+                        <h2><a href="{{ route('home') }}" class="">Home</a></h2>
+                        <h2><a href="{{ route('register') }}" class="">Register</a></h2>
+                        @endguest
 
                     </div>
                 </div>

@@ -8,7 +8,8 @@ Route::get('/home', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('/community', [DashboardController::class], 'index')->name('community');
+Route::get('/community', [DashboardController::class, 'index'])->name('community');
+
 Route::get('/register', function () {
     return view('components.register');
 });
