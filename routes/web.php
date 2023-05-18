@@ -1,15 +1,14 @@
 <?php
 
-use App\Http\Controllers\Auth\UserController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\UserController;
+use App\Http\Controllers\DashboardController;
 
 Route::get('/home', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('/community', function () {
-    return view('community');
-})->name('community');
+Route::get('/community', [DashboardController::class], 'index')->name('community');
 Route::get('/register', function () {
     return view('components.register');
 });
