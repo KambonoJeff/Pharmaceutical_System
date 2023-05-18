@@ -12,7 +12,7 @@ Route::get('/community', [DashboardController::class, 'index'])->name('community
 
 Route::get('/register', function () {
     return view('components.register');
-});
+})->name('register');
 Route::get('/login',function(){
     return view('components.login');
 })->name('login');

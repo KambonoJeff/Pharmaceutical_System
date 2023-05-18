@@ -18,7 +18,7 @@
 
                         @auth
                         <h2>
-                            <a href="http:{{ route('community') }}">Community</a>
+                            <a href="{{ route('community') }}">Community</a>
                         </h2>
                             <h2>{{ auth()->user()->name}}</h2>
 
