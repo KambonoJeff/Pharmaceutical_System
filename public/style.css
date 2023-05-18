@@ -1,5 +1,5 @@
 :root {
-    --primary-color: white;
+    --primary-color: yellow;
   }
 
 
@@ -8,7 +8,7 @@ body
     padding: 0;
     margin: auto;
     color: var(--primary-color);
-    background: grey;
+    background: rgb(168, 161, 161);
     letter-spacing: 3px;
 
 }
@@ -85,7 +85,7 @@ button {
 	border: 3px solid black;
   }
 form {
-  max-width: 500px;
+  max-width: 80%;
   margin: 0 auto;
   background-color: transparent;
   box-shadow: 0 11px 24px rgba(0, 0, 0, 0.2);
